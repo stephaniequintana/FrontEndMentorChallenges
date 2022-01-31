@@ -26,12 +26,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.png)
+![](https://lh3.googleusercontent.com/iGpomlzCDXnvZeWY75zxTK85PzphB7PDVnx8vpyT4Vg_BFfMcuoi9qvykt8RXvUaGlRPNDEpHXl79jc8TJoCaL3bD7dtz6IrA_ZBE9dwrVwbQ7yxlUmNMKvYOPdIsGa5hjVgswexI5CjlvHwbPUSCZgvgjeytlg5zapxkH1vCUsPyrbjSvKhGD8dbZCjLS2h3TYmUFvZ5Qer_xhehfN7y45PXbXaiBiCj9JMseJGTiHhstKoHmuYswrtjeVVkZq8MD_wowOU2ZB6m3hLReMpaqK8ia7BySsxlS9-SCeMcLL25Va9l1JDexZus2N34zXiURP4jm-8bP-6hB0ig1FsUeaMrIFzbmuYyx3u053DtWX7spkh_QX28dVAZnsuB5fsrETL2iA3chEUQ-wn6kZ3fKmLBXMHDXIuRqhxNa_silL8bmiDehgoEAHeIvhlhMUKqqjOjtysH_QRmMBQP4430uhhAmsz0B5Vjmms3GQngzLo_CPvclVBtzc841lVh3-v6fwS_S8p9wMz8jC28Lhfrc6g1I07NAZX4r-WuobkcFwML3ghz6Zig7upNwflIkcpYK4Q9IAvuApEtYKkH6-6soJmTvvOwDjoDZDkeCPpOt0VRuP6Fj1N3QpfpqD1giUffD_rDnO2-Thx3xXn24TUami7mi3i8XxGHKHxPgVkf8O6XcYlmlHh1IpPFrz551_ToQRmYtUvJjspzX8a6JIUtQa3=w565-h310-no?authuser=0)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/stephaniequintana/FrontEndMentor.challenges.3column-preview-card-component)
-- Live Site URL: [Add live site URL here](https://stephaniequintana.hithub.io/FrontEndMentor.challenges.3column-preview-card-component/)
+- Solution URL: [solution URL](https://github.com/stephaniequintana/FrontEndMentor.challenges.3column-preview-card-component)
+- Live Site URL: [live site URL](https://stephaniequintana.github.io/3column-preview-card-component/)
 
 ## My process
 
@@ -67,6 +67,9 @@ I'm excited to return to Front End Mentor and am hoping I can complete many more
 
 ## Author
 - Frontend Mentor - [@stephaniequintana](https://www.frontendmentor.io/profile/stephaniequintana)
+
+
+
 
 
 
