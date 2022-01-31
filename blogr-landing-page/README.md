@@ -1,6 +1,6 @@
-# Frontend Mentor - Blogr landing page solution
+# Frontend Mentor - 3-column preview card component solution
 
-This is a solution to the [Blogr landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [blogr-landing-page](https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -12,11 +12,8 @@ This is a solution to the [Blogr landing page challenge on Frontend Mentor](http
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -24,25 +21,17 @@ This is a solution to the [Blogr landing page challenge on Frontend Mentor](http
 
 Users should be able to:
 
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
+- View the optimal layout depending on their device's screen size
+- See hover states for interactive elements - in the case of this challenge, the only interactive state is the cursor should change to a pointer when hovered over the "button."
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](https://lh3.googleusercontent.com/B2PxkpeRvboAIA9Dov9GBF0b7lCjqmXgD4fcgnqdQ5Qt_Uvi6bRvA2z-sQn3_76xwEhDVDSUccOfmzvTDOHzZ7wnRdASXKfSU82MWe4reB8CcFRQrK-vowZ8OADpPXvJ5phwjjLq8F-J5fy_Q7LbJ8Z4IgJvoSunuSHsw3tAMr26810mDT6HdsJ3lYW-XmtkiC96e-YKV1f-3zL2FbUc6Qv_6c5KJhYvACIdVH8Kg-Ms-tx6D-t91p_HAbe0bu9L4NgsCGiWrX3IPH3uAEtiZHP4XC9nMsRDvntyIDbrwMFE1Ao1Ge6wZXIJrAUv1wbYAFCiE3EXfjnw7geFXpnmNpLzmSbKLIXeO6egkmAALyi_Qf3OutTnBcHfn3ty1XHLWMNQlUu3LZ2193-zN1aoTRXzMAu9h4GAD3kjzrrUoOoGfXgUdHHNIi6queGbFZfxsMG48lsIZx0gok3kGJ4lDCYKy3BLFjI8E1sDceJRDZBXhZb-k4IOHRbiEK0npeSe4KrrEniDDHWUTFi5U9Hmx7r-v7JmVpxaL7dSIxoYdtKevletcqwVRGfPRDCBTWF8kTZczavYBRutAa4rh3jXQbVc6vCd00n2EXo6fdlnzFjKeut47aiBnM222vHKSJH5PO88uhxOf0UIYsAXxbJ_du0WIi83abPY8OhcUIix3eF47rKiAhs-73i0N6N1iT_SyZwqGlz52VYwpLdrrNnZsMPu=w817-h413-no?authuser=0)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution URL](https://github.com/stephaniequintana/FrontEndMentor.challenges.blogr-landing-page)
+- Live Site URL: [live site URL](https://stephaniequintana.github.io/FrontEndMentor.challenges.blogr-landing-page/)
 
 ## My process
 
@@ -51,61 +40,36 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I implemented an array of CSS variable and learned about CSS Scope and the multiple benefits both bring to the combatting the complexities of updating the overall page layout.
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+:root {
+--light-red:hsl(356, 100%, 66%);
+--very-light-red:hsl(355,100%,74%);
+--very-dark-blue: hsl(208, 49%, 24%);
+--white: hsl(0, 0%, 100%);
+--grayish-blue: hsl(240, 2%, 79%);
+--very-dark-grayish-blue:hsl(206, 13%, 34%);
+--very-dark-black-blue: hsl(240, 10%, 16%);
+--bg-gradient-very-light-red: rgba(255, 143, 112, .8);
+--bg-gradient-light-red:rgb(255, 61, 84, .8);
+--body-grad-gray-blue:rgb(44, 45, 63);
+--body-grad-desat-blue: rgb(63, 65, 100);
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I'm excited to return to Front End Mentor and am hoping I can complete many more challenges and meet some interesting Developers along the way. I am continuing my learning journey through multiple outlets and look forward to when the "impossible" seem like near-second-hand knowledge!
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
+- Frontend Mentor - [@stephaniequintana](https://www.frontendmentor.io/profile/stephaniequintana)
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
