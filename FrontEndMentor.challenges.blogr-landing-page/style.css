@@ -1,0 +1,487 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+:root {
+--light-red:hsl(356, 100%, 66%);
+    /* cta text */
+--very-light-red:hsl(355,100%,74%);
+    /* cta hover background */
+--very-dark-blue: hsl(208, 49%, 24%);
+    /* headings */
+--white: hsl(0, 0%, 100%);
+    /* text */
+--grayish-blue: hsl(240, 2%, 79%);
+    /* footer text */
+--very-dark-grayish-blue:hsl(206, 13%, 34%);
+    /* body(copy) */
+--very-dark-black-blue: hsl(240, 10%, 16%);
+    /* footer background */
+--bg-gradient-very-light-red: rgba(255, 143, 112, .8);
+--bg-gradient-light-red:rgb(255, 61, 84, .8);
+--body-grad-gray-blue:rgb(44, 45, 63);
+--body-grad-desat-blue: rgb(63, 65, 100);
+
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Overpass', sans-serif;
+    font-size: 100%;
+    box-sizing: border-box;  
+    overflow-x: hidden;
+      
+}
+img {
+    max-width: 100%;
+}
+.wrapper{
+  width: 100vw;
+  position: relative;
+}
+header {
+    background-image: linear-gradient(to bottom, rgba(255, 143, 112, .8), rgb(255, 61, 84, .9)), url("images/bg-pattern-intro.svg");
+    background-color: lightgray;
+    background-size: 400%;
+    background-position: 38% 41%;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: auto;
+    overflow: hidden;  
+    border-bottom-left-radius: 100px; 
+    color: var(--white); 
+} 
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 85%;
+    margin: 3rem auto 5rem;
+}
+
+.nav__line{
+  width: 40px;
+  height: 3px;
+  background-color: white;
+  border-radius: .1rem;
+  margin-bottom: .4rem;
+}
+
+
+h1{
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+.nav__info{
+  display: block;
+  margin: 0 auto 3rem;
+  text-align: center;
+  max-width: 80%;
+  font-weight: 100;  
+}
+.header__btns{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 7rem;
+  
+}
+.header__btn{
+  font-size: 1rem;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 1rem 1.6rem;
+  border-radius: 100px;
+  font-weight: 500;
+  letter-spacing: .04rem;
+}
+.header__btn:hover{
+  background-color: var(--very-light-red);
+}
+.header__btn--start{
+  color: var(--light-red);
+  border: none;
+  margin-right: .5em;
+}
+.header__btn--start:hover{
+  color: var(--white);
+}
+.header__btn--learn{
+  color: var(--white);
+  background-color: transparent;
+  border: 1px solid var(--white);
+  margin-left: .5em;
+}
+
+/* --------------------------------------------------------------------nav-dropdown-menu----------------------------------------------------------- */
+.nav__dropdown--close{
+  display: none;
+}
+.nav__dropdown--open{
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  width: 85%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: .2rem .2rem 1rem rgba(0,0,0,0.5);
+  z-index: 10;
+}
+.nav__company{
+  width: 100%;
+}
+.nav__list{
+  list-style: none;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+.nav__list li a{
+  text-decoration: none;
+  color: var(--very-dark-blue);
+}
+.nav__item{
+  color: var(--very-dark-blue);
+  margin-top: 2rem;
+}
+.sub__menu--icon{
+  border: none;
+  font-size: 1.2rem;
+  margin-left: .4rem;
+  padding-top: .2rem;
+  color: red;
+  background-color: transparent;
+  transform: rotate(180deg) translateY(-2px);
+}
+
+.nav__sub-hide{
+  display: none;
+}
+.nav__sub-show{
+  display: block;
+  background-color: rgb(255, 235, 239);
+  border-radius: 5px;
+  margin-top: .8rem;
+  padding: 1.5rem 0;
+  width: 80%;
+  list-style: none;
+  margin: .8rem auto 0;
+}
+.nav__sub-show li{
+  display: block;
+  padding-top: .5rem;
+  letter-spacing: .05rem;
+}
+.nav__user{
+  margin-top: 3rem;
+  border-top: 1px solid rgb(255, 235, 239);
+  padding: 2rem;
+}
+.nav__user li a{
+  font-size: 1.5rem;
+}
+.header__btn--signup{
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 1.5rem 4rem;
+  border-radius: 100px;
+  font-weight: 500;
+  letter-spacing: .04rem;
+  color: white;
+  border: none;
+  background-image: linear-gradient(to right top, rgba(255, 143, 112, .8), rgb(255, 61, 84, .9));
+}
+/* --------------------------------------------------------------------design-section---------------------------------------------------------- */
+.design{
+  color: var(--very-dark-grayish-blue);
+  margin: 6rem auto 3rem;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+h2, h3{
+  color: var(--very-dark-blue);
+  width: 100%;
+  font-weight: 500;
+  font-size: 2rem;
+  letter-spacing: .05rem;
+}
+.design__img{
+  margin: 3rem 0;
+}
+.design__info{
+  max-width: 80%;
+  margin: 0 auto;
+}
+p{
+  margin: 1.5rem 0 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 100;
+  letter-spacing: .02rem;
+  line-height: 1.6;
+  color: var(--very-dark-grayish-blue);
+}
+/* --------------------------------------------------------------------structure-section---------------------------------------------------------- */
+.structure{
+  width: 100%;
+  margin: 0 auto 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.structure__img{
+  position: relative;
+  z-index: 10;
+}
+.structure__info{
+  
+  padding: 15rem 2rem 5rem;
+  margin-top: -14rem;
+  background-color: var(--body-grad-gray-blue);
+
+  background-image: linear-gradient(to top, transparent, rgba(63, 65, 100, .9)), url("images/bg-pattern-circles.svg");
+  background-repeat: no-repeat;
+  background-size: 180%;
+  background-position: -8.5rem -16rem;
+  color: var(--white);
+  border-radius: 0 100px 0 100px;
+  text-align: center;
+  
+}
+.structure__info h2{
+  margin-top: 2.5rem;
+  font-weight: 500;
+  color: var(--white);
+  line-height: 1.5;
+}
+.structure__info p{
+  color: var(--white);
+}
+.tooling{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tooling__img{
+  margin-bottom: 3rem;
+}
+.tooling__info{
+  max-width: 95%;
+  text-align: center;
+}
+.footer{
+  color: var(--grayish-blue);
+  background-color: var(--very-dark-black-blue);
+  margin-top: 5rem;
+  padding: 5rem 0;
+  border-radius: 0 100px 0 0;
+  
+}
+.footer__logo{
+  text-align: center;
+}
+.footer__nav{
+  list-style: none; 
+  margin-block-start: 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer__nav--item{
+  font-size: 1.2rem;
+  color: var(--white);
+  margin-bottom: 3rem;
+}
+.footer__nav--item ul{
+  list-style-type: none;
+  margin-top: 1.5rem;
+}
+.footer__nav--item a{
+  color: var(--grayish-blue);
+  text-decoration: none;
+  font-weight: 100;
+  line-height: 1.8;
+  
+}
+@media only screen and (min-width: 31.25em){
+  .structure__info{
+    margin-top: -18rem;
+  }
+}
+@media only screen and (min-width: 46.875em){
+  .footer__nav{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+    margin: 3rem 4rem 0;
+  }
+}
+@media only screen and (min-width: 90em){
+  
+  .sub__menu--icon{
+    color:var(--white);
+  }
+  .nav__line{
+    display: none;
+  }
+  .nav__dropdown--open{
+    display: none;
+  }
+  #nav__dropdown{
+    
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+  }
+  .nav{
+    width: 85%;
+  }
+  .nav__company{
+    display: flex;
+    align-items: center;
+  }
+  .nav__list{
+    display: flex;
+    align-items: center;
+  }
+  .nav__item{
+    color: var(--white);
+    margin: 0 3rem 0 0;
+    position: relative;
+  }
+  .nav__user{
+    margin-top: 0;
+    border-top: none;
+    padding: 0;
+  }
+  #login{
+    color: var(--white);
+  }
+  .header__btn--signup{
+    margin-top: 0;
+    margin-left: 2rem;
+    padding: 1rem 3rem;
+    width: 100%;
+    font-size: 1.2rem;
+    color: var(--light-red);
+    border: none;
+    background-color: var(--white);
+    background-image: none;
+  }
+  .header__btn--signup:hover{
+    color: var(--white);
+    background-image: linear-gradient(to right top, rgba(255, 143, 112, .8), rgb(255, 61, 84, .9));
+  }
+  .nav__sub-show{
+    padding: 1.5rem 2rem;
+    width: 200%;
+    position: absolute;
+  }
+  .design{
+    margin: 6rem 0 3rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .design__content{
+    margin-top: 6rem;
+    width: 100%;
+    display: flex;
+    position: relative;
+  }
+  .design__img{
+    position: absolute;
+    right: -10%;
+    top: 20%;
+    margin: 0;
+    width: 50%;
+    transform: scale(2.5);
+
+  }
+  
+  .design__info{
+    order: -1;
+    max-width: 50%;
+    margin: 0 4rem 0 6rem;
+    padding: 0 6rem;
+    text-align: left;
+  }
+  .design__info h3{
+    font-size: 1.7rem;
+  }
+  .structure{
+    margin: 15rem auto 5rem;
+    padding: 0 15rem;
+    
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--body-grad-gray-blue);
+    background-image: linear-gradient(to right, transparent, rgba(63, 65, 100, .1)), url("images/bg-pattern-circles.svg");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: -10rem -25rem;
+    border-radius: 0 100px 0 100px;
+    
+  }
+  .structure__img{
+    transform: scale(2.5);
+  }
+  .structure__info{
+    text-align: left;
+    padding: 5rem 0 6rem 13rem;
+    margin-top: 0;
+    background-color: transparent;
+    background-image: none;
+    border-radius: 0 0 0 0;
+    border-radius: none;
+  }
+  .tooling{
+    
+    flex-direction: row;
+    margin-top: 12rem;
+    
+    
+  }
+  .tooling__img{
+    margin-bottom: 0;
+    transform: scale(2) translateX(-5rem);
+  
+    
+  }
+  .tooling__info{
+    max-width: 50%;
+    text-align: left;
+    padding: 0 7rem 0 10rem;
+  }
+  .footer{
+    display: flex;
+    margin-top: 15rem;
+    padding: 5rem 5rem;
+    align-items: flex-start;
+  }
+  .footer nav{
+    width: 90%;
+  }
+  .footer__nav{
+    margin: 1rem 0 0;
+  }
+}
